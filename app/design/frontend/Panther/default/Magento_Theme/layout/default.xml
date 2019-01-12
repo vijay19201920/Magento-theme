@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+      
+       <!--<move element="copyright" destination="before.body.end"/>-->
+       <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="gaze.header.notification" as="gaze.header.notification" before="-" template="Magento_Theme::html/header/notification.phtml" ></block>
+        </referenceContainer>
+          
+           <referenceBlock name="my-account-link" remove="true" />
+           <referenceBlock name="wish-list-link" remove="true" />  
+        <move element="register-link" destination="header.links" after="-"/>
+         <move element="header" destination="register-link" before="-"/>
+         
+         <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        
+         <referenceBlock name="logo">
+            <arguments>
+                 <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">150</argument>
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

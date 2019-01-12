@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 19, 2018, 11:02:09 PM
+    Author     : vijayd
+*/
+
+.page-header {
+    border: 0;
+    margin-bottom: 0;
+    background: #222222;
+}
+.page-header .panel.wrapper {
+    background-color: #7e807e;
+    color: #ffffff;
+    background: #222222;
+}
+.nav-sections {
+    background: #222222;
+}
+.navigation{
+    background: #222222;
+}
+
+ .nav-sections {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    margin-bottom: 25px;
+    background: #222222;
+}
+.navigation {
+    background: #f5f5f5;
+    font-weight: 700;
+    height: inherit;
+    left: auto;
+    overflow: inherit;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: #222222;
+}
+.navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+    background: #f2703e;
+    border-color: #222222;
+    border-style: solid;
+    border-width: 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
